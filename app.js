@@ -26,7 +26,7 @@ else{
     console.log("Could not connect to Remote Database");
 }
 
-app.listen(3000);
-console.log('API is on Port 3000');
+app.listen(process.env.PORT);
+console.log('API is on Port' + process.env.PORT);
 
 
