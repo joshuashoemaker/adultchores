@@ -114,7 +114,7 @@ function updateAllowance(val){
 const PIECHART = document.getElementById("pieChart");
 
     $.ajax({
-        url: "http://127.0.0.1:3000/",
+        url: "https://adultchores.herokuapp.com",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (result) {

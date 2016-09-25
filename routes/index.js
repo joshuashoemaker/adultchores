@@ -3,7 +3,6 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 
-
 //-------------------------------Models-------------------------------
 var Activity = require('../models/activity');
 var User = require('../models/user');
@@ -211,9 +210,9 @@ router.post('/updateAllowance', function(req, res, next){
 
 
 //-----------Seed Project---------
-router.get('/seed', function(req, res, next){
+router.get('/seed', function(req, res){
 
-    var seedUser = new Cat({ 
+    var seedUser = new User({ 
         username: 'JShoemakerDev' ,
         password: 'AintNoThang',
         allowance: 40

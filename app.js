@@ -18,14 +18,12 @@ app.use(bodyParser.json());
 //routes
 app.use('/', require('./routes/index'));
 
-//models
-
-//Connect to Local Database
-if(mongoose.connect('mongodb://localhost/wreck')){
-    console.log('Connected to Local DAtabase');
+//Connect to Remote Database
+if(mongoose.connect('mongodb://jshoemakerdev:AintNoThang@ds147965.mlab.com:47965/adultchores')){
+    console.log('Connected to Remote Database');
 }
 else{
-    console.log("Could not connect to Local Database");
+    console.log("Could not connect to Remote Database");
 }
 
 app.listen(3000);
