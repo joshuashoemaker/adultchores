@@ -1,0 +1,20 @@
+-----------------REMEMBER---------------
+--During design. keep in mind that the 
+values of activities are percentages,
+not individual points
+
+
+----------------Notes-------------------
+----------------------------------------
+
+---------------9/18/16------------------
+-Basic Activity Model created
+-routes all share index routes for current ease of access
+-Create Activity route has been made, No form, will use AJAX
+-Delete Activity by name is finished.
+-Caluculating values of completed Activities
+----------------------------------------
+
+--------------What's Next---------------
+-Change from percentages to points
+-Create Simple View with EJS engine

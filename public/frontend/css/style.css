@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+}
+
+#activitiesWrapper {
+    margin: 25px auto 25px auto;
+    max-width: 400px;
+}
+
+#activitiesWrapper div{
+    margin-top: 10px;
+}
+
+.activity{
+    border-bottom-color: linen;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    text-align: center;
+}
+
+.activityHeader{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto 4px auto;
+}
+
+.activity .glyphicon{
+    font-size: 12px;
+}
+
+
+#chartWrapper {
+    max-width: 700px;
+    max-height: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.newActivityWrapper{
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.updateAllowance{
+    margin: 20px auto;
+    max-width: 400px;
+}
