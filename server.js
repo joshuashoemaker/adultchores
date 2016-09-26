@@ -16,6 +16,15 @@ var port = Number(process.env.PORT || 3000);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(function (req, res, next) {
+
+        res.setHeader('Access-Control-Allow-Origin', "http://"+req.headers.host+':56394');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+        next();
+    }
+);
+
 //routes
 app.use('/', require('./routes/index'));
 
