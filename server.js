@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.use(function (req, res, next) {
 
-        res.setHeader('Access-Control-Allow-Origin', "http://127.0.0.1:56394");
+        res.setHeader('Access-Control-Allow-Origin', "https://joshuashoemaker.github.io");
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
         res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
         next();
