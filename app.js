@@ -11,6 +11,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
+var port = Number(process.env.PORT || 3000);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -26,7 +27,7 @@ else{
     console.log("Could not connect to Remote Database");
 }
 
-app.listen(process.env.PORT);
-console.log('API is on Port' + process.env.PORT);
+app.listen(port);
+console.log('API is on Port' + port);
 
 
