@@ -56,7 +56,7 @@ $(document).on('click', '#updateButton', function(){
 function activityCompleted(act){
     $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:3000/timesCompleted",
+        url: "https://adultchores.herokuapp.com/timesCompleted",
         data: act,
         success: function(){
             location.reload();
@@ -68,7 +68,7 @@ function activityCompleted(act){
 function removeActivity(act){
     $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:3000/deleteActivity",
+        url: "https://adultchores.herokuapp.com/deleteActivity",
         data: {
             name: act
         },
@@ -82,7 +82,7 @@ function removeActivity(act){
 function addActivity(act){
     $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:3000/newActivity",
+        url: "https://adultchores.herokuapp.com/newActivity",
         data: act, 
         success:  function(){
             location.reload();
@@ -95,7 +95,7 @@ function addActivity(act){
 function updateAllowance(val){
     $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:3000/updateAllowance",
+        url: "https://adultchores.herokuapp.com/updateAllowance",
         data: {
             allowance: val
         },
